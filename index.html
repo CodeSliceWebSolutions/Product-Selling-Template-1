@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yours, in Christ ✝️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --pink: #f8c8dc;
+  --rose: #eaa0bc;
+  --cream: #fff8f2;
+  --beige: #f5eee8;
+  --text: #4a3b3b;
+  --accent: #c97a9b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to bottom, var(--pink), var(--beige));
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+.order-btn {
+  margin-top: 30px;
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: #b56a89;
+}
+
+section {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+}
+
+.packages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: var(--accent);
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.card ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.card li {
+  margin-bottom: 6px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  background: var(--accent);
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+}
+
+.note {
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+.individuals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.item {
+  background: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+footer {
+  background: var(--beige);
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 80px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.04);
+}
+
+.order-form {
+  max-width: 550px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 35px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  border: 1px solid #e6cbd7;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+}
+
+.order-form textarea {
+  resize: none;
+}
+
+.order-form button {
+  width: 100%;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-form button:hover {
+  background: #b56a89;
+}
+
+.form-note {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>yours, in Christ ✝️</h1>
+  <p>Pretty • Handmade • Faith-Filled Bible Study Packages</p>
+  <p>🇿🇦 Nationwide Delivery</p>
+  <a class="order-btn" href="https://wa.me/27797647797">Order via WhatsApp</a>
+</header>
+
+<section>
+  <h2 class="section-title">✨ Our Beautiful Packages</h2>
+
+  <div class="gallery">
+    <img src="1.png" alt="Bible Study Package 1">
+    <img src="2.png" alt="Bible Study Package 2">
+    <img src="3.png" alt="Bible Study Package 3">
+  </div>
+</section>
+
+
+<section>
+  <h2 class="section-title">🛍 Bible Study Packages</h2>
+
+  <div class="packages">
+
+    <div class="card">
+      <h3>The Full Armour</h3>
+      <p class="price">R1250</p>
+      <ul>
+        <li>Bible NKJV</li>
+        <li>Prayer Journal</li>
+        <li>Godly Habits Book</li>
+        <li>Notebook</li>
+        <li>Bible Tabs</li>
+        <li>Highlighters x2</li>
+        <li>Black Pen</li>
+        <li>Bookmark</li>
+        <li>Sticky Notes</li>
+        <li>Keyring</li>
+        <li><b>FREE:</b> Book & Handcream</li>
+      </ul>
+      <a href="https://wa.me/27797647797">Order Now</a>
+    </div>
+
+    <div class="card">
+      <h3>Faith Builder</h3>
+      <p class="price">R790</p>
+      <ul>
+        <li>Bible NKJV</li>
+        <li>Notebook</li>
+        <li>Bible Tabs</li>
+        <li>Highlighters x2</li>
+        <li>Black Pen</li>
+        <li>Bookmark</li>
+        <li>Sticky Notes</li>
+      </ul>
+      <a href="https://wa.me/27797647797">Order Now</a>
+    </div>
+
+    <div class="card">
+      <h3>Jesus Date Essential</h3>
+      <p class="price">R855</p>
+      <ul>
+        <li>Bible NKJV</li>
+        <li>Notebook</li>
+        <li>Bible Tabs</li>
+        <li>Highlighters x2</li>
+        <li>Black Pen</li>
+        <li>Bookmark</li>
+        <li>Sticky Notes</li>
+        <li>Headphones</li>
+      </ul>
+      <a href="https://wa.me/27797647797">Order Now</a>
+    </div>
+
+    <div class="card">
+      <h3>Baby In Christ</h3>
+      <p class="price">R855</p>
+      <ul>
+        <li>Bible NKJV</li>
+        <li>Prayers for My Girl/Boy</li>
+        <li>Bible Activity Fun Book</li>
+        <li>Crayons</li>
+      </ul>
+      <a href="https://wa.me/27797647797">Order Now</a>
+    </div>
+
+    <div class="card">
+      <h3>Child of God</h3>
+      <p class="price">R1170</p>
+      <ul>
+        <li>365 Devotions for Girls</li>
+        <li>Notebook</li>
+        <li>Bible Tabs</li>
+        <li>Highlighters x2</li>
+        <li>Black Pen</li>
+        <li>Bookmark</li>
+        <li>Sticky Notes</li>
+        <li><b>FREE:</b> Handcream</li>
+      </ul>
+      <a href="https://wa.me/27797647797">Order Now</a>
+    </div>
+
+  </div>
+
+  <p class="note">📦 All orders include delivery fee</p>
+</section>
+
+<section>
+  <h2 class="section-title">✨ Individual Items</h2>
+  <div class="individuals">
+    <div class="item">Bible NKJV</div>
+    <div class="item">Prayer Journal</div>
+    <div class="item">Godly Habits Book</div>
+    <div class="item">Notebook</div>
+    <div class="item">Bible Tabs</div>
+    <div class="item">Highlighters x2</div>
+    <div class="item">Black Pen</div>
+    <div class="item">Bookmark</div>
+    <div class="item">Sticky Notes</div>
+    <div class="item">Keyring</div>
+    <div class="item">Free Book</div>
+    <div class="item">Handcream</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">💗 Place Your Order</h2>
+
+  <form class="order-form" onsubmit="sendWhatsApp(); return false;">
+    
+    <input type="text" id="name" placeholder="Your Full Name" required>
+    
+    <input type="text" id="location" placeholder="Delivery Location (City / Province)" required>
+
+    <select id="package" required>
+      <option value="">Select a Package</option>
+      <option>The Full Armour – R1250</option>
+      <option>Faith Builder – R790</option>
+      <option>Jesus Date Essential – R855</option>
+      <option>Baby In Christ – R855</option>
+      <option>Child of God – R1170</option>
+      <option>Individual Items</option>
+    </select>
+
+    <textarea id="message" rows="4" placeholder="Extra notes (optional)"></textarea>
+
+    <button type="submit">Send Order via WhatsApp</button>
+
+    <p class="form-note">📦 Nationwide delivery included</p>
+  </form>
+</section>
+
+
+<footer>
+  <p>📞 WhatsApp Orders: <b>079 764 7797</b></p>
+  <p>Made with love & faith ✝️</p>
+</footer>
+
+
+<script>
+function sendWhatsApp() {
+  const name = document.getElementById("name").value;
+  const location = document.getElementById("location").value;
+  const pack = document.getElementById("package").value;
+  const message = document.getElementById("message").value;
+
+  const whatsappMessage = 
+    `Hello 🌸%0A%0A` +
+    `My name is *${name}*.%0A` +
+    `I would like to order:%0A` +
+    `*${pack}*%0A%0A` +
+    `Delivery location: ${location}%0A` +
+    `Extra notes: ${message}%0A%0A` +
+    `Thank you ✝️`;
+
+  const phone = "27797647797";
+
+  window.open(`https://wa.me/${phone}?text=${whatsappMessage}`, "_blank");
+}
+</script>
+
+</body>
+</html>
